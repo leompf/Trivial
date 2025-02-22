@@ -45,100 +45,126 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(34, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 31);
+            this.label1.Size = new System.Drawing.Size(120, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Jogador:";
             // 
             // lbl_nickname
             // 
             this.lbl_nickname.AutoSize = true;
-            this.lbl_nickname.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nickname.Location = new System.Drawing.Point(160, 28);
+            this.lbl_nickname.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nickname.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_nickname.Location = new System.Drawing.Point(160, 29);
             this.lbl_nickname.Name = "lbl_nickname";
-            this.lbl_nickname.Size = new System.Drawing.Size(79, 29);
+            this.lbl_nickname.Size = new System.Drawing.Size(83, 32);
             this.lbl_nickname.TabIndex = 1;
             this.lbl_nickname.Text = "Nome";
             // 
             // lbl_pergunta
             // 
             this.lbl_pergunta.AutoSize = true;
-            this.lbl_pergunta.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pergunta.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pergunta.ForeColor = System.Drawing.Color.White;
             this.lbl_pergunta.Location = new System.Drawing.Point(21, 119);
             this.lbl_pergunta.Name = "lbl_pergunta";
-            this.lbl_pergunta.Size = new System.Drawing.Size(110, 29);
+            this.lbl_pergunta.Size = new System.Drawing.Size(118, 32);
             this.lbl_pergunta.TabIndex = 2;
             this.lbl_pergunta.Text = "Pergunta";
             // 
             // btn_resposta1
             // 
-            this.btn_resposta1.Location = new System.Drawing.Point(323, 385);
+            this.btn_resposta1.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_resposta1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resposta1.ForeColor = System.Drawing.Color.White;
+            this.btn_resposta1.Location = new System.Drawing.Point(187, 245);
             this.btn_resposta1.Name = "btn_resposta1";
-            this.btn_resposta1.Size = new System.Drawing.Size(156, 57);
+            this.btn_resposta1.Size = new System.Drawing.Size(351, 122);
             this.btn_resposta1.TabIndex = 3;
             this.btn_resposta1.Text = "Resposta";
-            this.btn_resposta1.UseVisualStyleBackColor = true;
+            this.btn_resposta1.UseVisualStyleBackColor = false;
             this.btn_resposta1.Click += new System.EventHandler(this.CicloPerguntas);
+            this.btn_resposta1.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btn_resposta1.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btn_resposta2
             // 
-            this.btn_resposta2.Location = new System.Drawing.Point(712, 385);
+            this.btn_resposta2.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_resposta2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resposta2.ForeColor = System.Drawing.Color.White;
+            this.btn_resposta2.Location = new System.Drawing.Point(712, 245);
             this.btn_resposta2.Name = "btn_resposta2";
-            this.btn_resposta2.Size = new System.Drawing.Size(156, 57);
+            this.btn_resposta2.Size = new System.Drawing.Size(351, 122);
             this.btn_resposta2.TabIndex = 4;
             this.btn_resposta2.Text = "Resposta";
-            this.btn_resposta2.UseVisualStyleBackColor = true;
+            this.btn_resposta2.UseVisualStyleBackColor = false;
             this.btn_resposta2.Click += new System.EventHandler(this.CicloPerguntas);
+            this.btn_resposta2.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btn_resposta2.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btn_resposta3
             // 
-            this.btn_resposta3.Location = new System.Drawing.Point(323, 522);
+            this.btn_resposta3.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_resposta3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resposta3.ForeColor = System.Drawing.Color.White;
+            this.btn_resposta3.Location = new System.Drawing.Point(187, 462);
             this.btn_resposta3.Name = "btn_resposta3";
-            this.btn_resposta3.Size = new System.Drawing.Size(156, 57);
+            this.btn_resposta3.Size = new System.Drawing.Size(351, 122);
             this.btn_resposta3.TabIndex = 5;
             this.btn_resposta3.Text = "Resposta";
-            this.btn_resposta3.UseVisualStyleBackColor = true;
+            this.btn_resposta3.UseVisualStyleBackColor = false;
             this.btn_resposta3.Click += new System.EventHandler(this.CicloPerguntas);
+            this.btn_resposta3.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btn_resposta3.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // btn_resposta4
             // 
-            this.btn_resposta4.Location = new System.Drawing.Point(712, 522);
+            this.btn_resposta4.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_resposta4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_resposta4.ForeColor = System.Drawing.Color.White;
+            this.btn_resposta4.Location = new System.Drawing.Point(712, 462);
             this.btn_resposta4.Name = "btn_resposta4";
-            this.btn_resposta4.Size = new System.Drawing.Size(156, 57);
+            this.btn_resposta4.Size = new System.Drawing.Size(351, 122);
             this.btn_resposta4.TabIndex = 6;
             this.btn_resposta4.Text = "Resposta";
-            this.btn_resposta4.UseVisualStyleBackColor = true;
+            this.btn_resposta4.UseVisualStyleBackColor = false;
             this.btn_resposta4.Click += new System.EventHandler(this.CicloPerguntas);
+            this.btn_resposta4.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
+            this.btn_resposta4.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(962, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 31);
+            this.label2.Size = new System.Drawing.Size(88, 37);
             this.label2.TabIndex = 7;
             this.label2.Text = "Score:";
             // 
             // lbl_score
             // 
             this.lbl_score.AutoSize = true;
-            this.lbl_score.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_score.Location = new System.Drawing.Point(1052, 31);
+            this.lbl_score.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_score.ForeColor = System.Drawing.Color.Gold;
+            this.lbl_score.Location = new System.Drawing.Point(1056, 33);
             this.lbl_score.Name = "lbl_score";
-            this.lbl_score.Size = new System.Drawing.Size(26, 29);
+            this.lbl_score.Size = new System.Drawing.Size(28, 32);
             this.lbl_score.TabIndex = 8;
             this.lbl_score.Text = "0";
             // 
             // lbl_timer
             // 
             this.lbl_timer.AutoSize = true;
-            this.lbl_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_timer.Location = new System.Drawing.Point(543, 31);
+            this.lbl_timer.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_timer.ForeColor = System.Drawing.Color.Red;
+            this.lbl_timer.Location = new System.Drawing.Point(586, 33);
             this.lbl_timer.Name = "lbl_timer";
-            this.lbl_timer.Size = new System.Drawing.Size(26, 29);
+            this.lbl_timer.Size = new System.Drawing.Size(33, 37);
             this.lbl_timer.TabIndex = 9;
             this.lbl_timer.Text = "0";
             // 
@@ -151,6 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.lbl_timer);
             this.Controls.Add(this.lbl_score);
@@ -162,6 +189,7 @@
             this.Controls.Add(this.lbl_pergunta);
             this.Controls.Add(this.lbl_nickname);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Jogo";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Jogo_Load);

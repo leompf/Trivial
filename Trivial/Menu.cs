@@ -12,6 +12,7 @@ namespace Trivial
 {
     public partial class Menu : Form
     {
+        // Lógica
         Opcoes opcoes = new Opcoes();
 
         public void Resolucao()
@@ -32,6 +33,7 @@ namespace Trivial
             opcoes.Show();
         }
 
+        // Customizações de UI
         private void btn_MouseEnter(object sender, EventArgs e)
         {
             Button btn = sender as Button;

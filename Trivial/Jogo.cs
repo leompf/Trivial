@@ -14,6 +14,7 @@ namespace Trivial
 {
     public partial class Jogo : Form
     {
+        // Lógica
         XmlDocument doc;
 
         private string nickname;
@@ -164,6 +165,7 @@ namespace Trivial
                 timer1.Stop();
                 perguntaAtual++;
                 ExibirPerguntaAtual();
+                timer1.Start();
             }
         }
 
@@ -183,5 +185,20 @@ namespace Trivial
                 MessageBox.Show($"Erro ao salvar pontuacao", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        // Customizações de UI
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.Gold;
+            btn.ForeColor = Color.Black;
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.DarkBlue;
+            btn.ForeColor = Color.White;
+        }      
     }
 }

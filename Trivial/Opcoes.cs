@@ -14,6 +14,7 @@ namespace Trivial
 {   
     public partial class Opcoes : Form
     {
+        // Lógica
         private string nickname = "";
         private int dificuldade = 0;
         private string categoria;
@@ -84,6 +85,7 @@ namespace Trivial
             }            
         }
 
+        // Customizações de UI
         private void btn_MouseEnter(object sender, EventArgs e)
         {
             Button btn = sender as Button;
