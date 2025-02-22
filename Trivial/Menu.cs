@@ -31,5 +31,20 @@ namespace Trivial
             this.Hide();
             opcoes.Show();
         }
+
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.Gold;
+            btn.ForeColor = Color.Black;
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.DarkBlue;
+            btn.ForeColor = Color.Gold;
+        }
+
     }
 }
