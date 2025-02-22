@@ -41,8 +41,7 @@ namespace Trivial
 
         private void tb_nickname_Enter(object sender, EventArgs e)
         {
-            tb_nickname.TextAlign = HorizontalAlignment.Center;
-            
+            tb_nickname.TextAlign = HorizontalAlignment.Center;          
         }
 
         private void tb_nickname_TextChanged(object sender, EventArgs e)
@@ -83,6 +82,20 @@ namespace Trivial
                 this.Hide();
                 jogo.Show();
             }            
-        }      
+        }
+
+        private void btn_MouseEnter(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.Gold;
+            btn.ForeColor = Color.Black;
+        }
+
+        private void btn_MouseLeave(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            btn.BackColor = Color.DarkBlue;
+            btn.ForeColor = Color.Gold;
+        }
     }
 }
