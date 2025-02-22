@@ -58,7 +58,7 @@
             this.lbl_nickname.AutoSize = true;
             this.lbl_nickname.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nickname.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_nickname.Location = new System.Drawing.Point(160, 29);
+            this.lbl_nickname.Location = new System.Drawing.Point(148, 30);
             this.lbl_nickname.Name = "lbl_nickname";
             this.lbl_nickname.Size = new System.Drawing.Size(83, 32);
             this.lbl_nickname.TabIndex = 1;
@@ -66,14 +66,14 @@
             // 
             // lbl_pergunta
             // 
-            this.lbl_pergunta.AutoSize = true;
             this.lbl_pergunta.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_pergunta.ForeColor = System.Drawing.Color.White;
-            this.lbl_pergunta.Location = new System.Drawing.Point(21, 119);
+            this.lbl_pergunta.Location = new System.Drawing.Point(12, 104);
             this.lbl_pergunta.Name = "lbl_pergunta";
-            this.lbl_pergunta.Size = new System.Drawing.Size(118, 32);
+            this.lbl_pergunta.Size = new System.Drawing.Size(1231, 107);
             this.lbl_pergunta.TabIndex = 2;
             this.lbl_pergunta.Text = "Pergunta";
+            this.lbl_pergunta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btn_resposta1
             // 
