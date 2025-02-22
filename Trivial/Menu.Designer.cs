@@ -51,7 +51,7 @@
             this.btn_jogar.BackColor = System.Drawing.Color.DarkBlue;
             this.btn_jogar.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_jogar.ForeColor = System.Drawing.Color.Gold;
-            this.btn_jogar.Location = new System.Drawing.Point(259, 250);
+            this.btn_jogar.Location = new System.Drawing.Point(251, 361);
             this.btn_jogar.Name = "btn_jogar";
             this.btn_jogar.Size = new System.Drawing.Size(200, 50);
             this.btn_jogar.TabIndex = 1;
@@ -66,7 +66,7 @@
             this.btn_scores.BackColor = System.Drawing.Color.DarkBlue;
             this.btn_scores.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_scores.ForeColor = System.Drawing.Color.Gold;
-            this.btn_scores.Location = new System.Drawing.Point(543, 250);
+            this.btn_scores.Location = new System.Drawing.Point(536, 361);
             this.btn_scores.Name = "btn_scores";
             this.btn_scores.Size = new System.Drawing.Size(200, 50);
             this.btn_scores.TabIndex = 2;
@@ -80,7 +80,7 @@
             this.btn_sair.BackColor = System.Drawing.Color.DarkBlue;
             this.btn_sair.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sair.ForeColor = System.Drawing.Color.Gold;
-            this.btn_sair.Location = new System.Drawing.Point(821, 250);
+            this.btn_sair.Location = new System.Drawing.Point(837, 361);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(200, 50);
             this.btn_sair.TabIndex = 3;

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.IO;
+using System.Media;
 
 namespace Trivial
 {
@@ -142,13 +143,21 @@ namespace Trivial
         {
             Button botaoClicado = sender as Button;
             Pergunta pergunta = listaPerguntas[perguntaAtual];
+            SoundPlayer som = new SoundPlayer();
 
             if (botaoClicado.Text == pergunta.RespostaCorreta)
             {
                 score += 10;
                 lbl_score.Text = score.ToString();
+
+                som.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resposta_correta.wav");
+            }
+            else
+            {
+                som.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "resposta_incorreta.wav");
             }
 
+            som.PlaySync();
             perguntaAtual++;
             ExibirPerguntaAtual();
         }
@@ -177,7 +186,7 @@ namespace Trivial
             {
                 using (StreamWriter writer = new StreamWriter(caminho, true))
                 {
-                    writer.WriteLine($"{nickname} - {score}");
+                    writer.WriteLine($"{nickname, -10} | {score, -1} | {categoria}");
                 }
             }
             catch (Exception ex)
