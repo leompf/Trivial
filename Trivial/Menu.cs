@@ -25,7 +25,10 @@ namespace Trivial
         {
             InitializeComponent();
             Resolucao();
-        }    
+
+            AnimacaoTitulo();
+            CorTitulo();
+        }
 
         private void btn_jogar_Click(object sender, EventArgs e)
         {
@@ -48,5 +51,50 @@ namespace Trivial
             btn.ForeColor = Color.Gold;
         }
 
+        private Timer timer;
+        private int posicaoAlvo = 320;
+        private int velocidade = 40;
+        private bool visivel = true;
+
+        private void AnimacaoTitulo()
+        {
+            lbl_titulo.Left = -lbl_titulo.Width; // Start outside the screen
+            timer = new Timer();
+            timer.Interval = 20; // Adjust speed
+            timer.Tick += MoverTitulo;
+            timer.Start();
+        }
+        private void MoverTitulo(object sender, EventArgs e)
+        {
+            if (lbl_titulo.Left < posicaoAlvo)
+            {
+                lbl_titulo.Left += velocidade; // Move right
+            }
+            else
+            {
+                timer.Stop();
+            }
+        }
+
+        private Timer timerCor;
+        private bool cor1 = true;
+
+        private void CorTitulo()
+        {
+            timerCor = new Timer();
+            timerCor.Interval = 350;
+            timerCor.Tick += AlternarCorTitulo;
+            timerCor.Start();
+        }
+
+        private void AlternarCorTitulo(object sender, EventArgs e)
+        {
+            if (cor1)
+                lbl_titulo.ForeColor = Color.White;
+            else
+                lbl_titulo.ForeColor = Color.Gold;
+
+            cor1 = !cor1; 
+        }
     }
 }
