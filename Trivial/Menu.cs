@@ -54,7 +54,6 @@ namespace Trivial
         private Timer timer;
         private int posicaoAlvo = 320;
         private int velocidade = 40;
-        private bool visivel = true;
 
         private void AnimacaoTitulo()
         {

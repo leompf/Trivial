@@ -208,6 +208,6 @@ namespace Trivial
             Button btn = sender as Button;
             btn.BackColor = Color.DarkBlue;
             btn.ForeColor = Color.White;
-        }      
+        }
     }
 }

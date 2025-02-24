@@ -75,11 +75,15 @@ namespace Trivial
             {
                 MessageBox.Show("Seleciona uma categoria e dificuldade", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            else if (tb_nickname.Text == "")
+            {
+                MessageBox.Show("Introduz um nome!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
             else
             {
                 categoria = cbb_categorias.Text;
                 Jogo jogo = new Jogo(nickname, dificuldade, categoria);
-                
+
                 this.Hide();
                 jogo.Show();
             }            
