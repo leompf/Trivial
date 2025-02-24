@@ -95,5 +95,13 @@ namespace Trivial
 
             cor1 = !cor1; 
         }
+
+        private void btn_scores_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Scoreboard scoreboard = new Scoreboard();
+            scoreboard.Show();
+        }
     }
 }

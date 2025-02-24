@@ -186,7 +186,7 @@ namespace Trivial
             {
                 using (StreamWriter writer = new StreamWriter(caminho, true))
                 {
-                    writer.WriteLine($"{nickname, -10} | {score, -1} | {categoria}");
+                    writer.WriteLine($"{nickname, -20} | {score, 3} | {categoria, -15}");
                 }
             }
             catch (Exception ex)

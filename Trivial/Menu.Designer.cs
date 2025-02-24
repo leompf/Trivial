@@ -72,6 +72,7 @@
             this.btn_scores.TabIndex = 2;
             this.btn_scores.Text = "Scores";
             this.btn_scores.UseVisualStyleBackColor = false;
+            this.btn_scores.Click += new System.EventHandler(this.btn_scores_Click);
             this.btn_scores.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
             this.btn_scores.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
