@@ -32,6 +32,7 @@
             this.btn_jogar = new System.Windows.Forms.Button();
             this.btn_scores = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.cbx_mute = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbl_titulo
@@ -91,12 +92,27 @@
             this.btn_sair.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
             this.btn_sair.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 
+            // cbx_mute
+            // 
+            this.cbx_mute.AutoSize = true;
+            this.cbx_mute.BackColor = System.Drawing.Color.DarkBlue;
+            this.cbx_mute.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_mute.ForeColor = System.Drawing.Color.Gold;
+            this.cbx_mute.Location = new System.Drawing.Point(1017, 554);
+            this.cbx_mute.Name = "cbx_mute";
+            this.cbx_mute.Size = new System.Drawing.Size(75, 29);
+            this.cbx_mute.TabIndex = 4;
+            this.cbx_mute.Text = "Mute";
+            this.cbx_mute.UseVisualStyleBackColor = false;
+            this.cbx_mute.Click += new System.EventHandler(this.cbx_mute_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.cbx_mute);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_scores);
             this.Controls.Add(this.btn_jogar);
@@ -115,6 +131,7 @@
         private System.Windows.Forms.Button btn_jogar;
         private System.Windows.Forms.Button btn_scores;
         private System.Windows.Forms.Button btn_sair;
+        private System.Windows.Forms.CheckBox cbx_mute;
     }
 }
 

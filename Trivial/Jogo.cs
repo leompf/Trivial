@@ -128,8 +128,7 @@ namespace Trivial
                 CarregarScore();
                 this.Close();
 
-                Menu menu = new Menu();
-                menu.Show();
+                Trivial.Menu.instancia.Show();
                 return;
             }
 
@@ -217,7 +216,8 @@ namespace Trivial
 
         private void Jogo_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            Trivial.Menu.instancia.Show();
+            Trivial.Menu.musica.PlayLooping();
         }
     }
 }

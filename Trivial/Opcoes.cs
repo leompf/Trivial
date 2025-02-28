@@ -85,6 +85,7 @@ namespace Trivial
                 Jogo jogo = new Jogo(nickname, dificuldade, categoria);
 
                 Trivial.Menu.musica.Stop();
+                Trivial.Menu.somBotao.Play();
                 this.Hide();
                 jogo.Show();
             }            

@@ -17,6 +17,7 @@ namespace Trivial
         // Lógica
         Opcoes opcoes = new Opcoes();
         public static SoundPlayer musica = new SoundPlayer();
+        public static SoundPlayer somBotao = new SoundPlayer();
         public static Menu instancia;
 
         public void Resolucao()
@@ -37,6 +38,7 @@ namespace Trivial
 
         private void btn_jogar_Click(object sender, EventArgs e)
         {
+            somBotao.Play();
             this.Hide();
             opcoes.Show();
         }
@@ -103,6 +105,7 @@ namespace Trivial
 
         private void btn_scores_Click(object sender, EventArgs e)
         {
+            somBotao.Play();
             this.Hide();
 
             Scoreboard scoreboard = new Scoreboard();
@@ -111,13 +114,27 @@ namespace Trivial
 
         private void btn_sair_Click(object sender, EventArgs e)
         {
+            somBotao.Play();
             Application.Exit();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            somBotao.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Clicar botao.wav");
             musica.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"What If So Then - Karneef.wav");
             musica.PlayLooping();
+        }
+
+        private void cbx_mute_Click(object sender, EventArgs e)
+        {
+            if (cbx_mute.Checked == true)
+            {
+                musica.Stop();
+            }
+            else
+            {
+                musica.Play();
+            }
         }
     }
 }
