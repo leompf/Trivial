@@ -75,7 +75,7 @@ namespace Trivial
             {
                 MessageBox.Show("Seleciona uma categoria e dificuldade", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (tb_nickname.Text == "")
+            else if (String.IsNullOrEmpty(tb_nickname.Text) || String.IsNullOrWhiteSpace(tb_nickname.Text))
             {
                 MessageBox.Show("Introduz um nome!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

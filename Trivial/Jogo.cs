@@ -45,16 +45,22 @@ namespace Trivial
             {
                 tempoRestante = TimeSpan.FromSeconds(30);
                 lbl_timer.Text = tempoRestante.ToString(@"ss");
+                timer1.Start();
+                ExibirPerguntaAtual();
             }
             else if (dificuldade == 3)
             {
                 tempoRestante = TimeSpan.FromSeconds(15);
                 lbl_timer.Text = tempoRestante.ToString(@"ss");
+                timer1.Start();
+                ExibirPerguntaAtual();
             }
-
-            timer1.Start();
-
-            ExibirPerguntaAtual();
+            else
+            {
+                lbl_timer.Visible = false;
+                //timer1.Start();
+                ExibirPerguntaAtual();
+            }
         }
 
         private class Pergunta
@@ -209,5 +215,7 @@ namespace Trivial
             btn.BackColor = Color.DarkBlue;
             btn.ForeColor = Color.White;
         }
+
+ 
     }
 }

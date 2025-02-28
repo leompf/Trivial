@@ -149,22 +149,22 @@
             // lbl_score
             // 
             this.lbl_score.AutoSize = true;
-            this.lbl_score.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_score.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_score.ForeColor = System.Drawing.Color.Gold;
-            this.lbl_score.Location = new System.Drawing.Point(1056, 33);
+            this.lbl_score.Location = new System.Drawing.Point(1040, 30);
             this.lbl_score.Name = "lbl_score";
-            this.lbl_score.Size = new System.Drawing.Size(28, 32);
+            this.lbl_score.Size = new System.Drawing.Size(33, 37);
             this.lbl_score.TabIndex = 8;
             this.lbl_score.Text = "0";
             // 
             // lbl_timer
             // 
             this.lbl_timer.AutoSize = true;
-            this.lbl_timer.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_timer.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_timer.ForeColor = System.Drawing.Color.Red;
             this.lbl_timer.Location = new System.Drawing.Point(586, 33);
             this.lbl_timer.Name = "lbl_timer";
-            this.lbl_timer.Size = new System.Drawing.Size(33, 37);
+            this.lbl_timer.Size = new System.Drawing.Size(40, 46);
             this.lbl_timer.TabIndex = 9;
             this.lbl_timer.Text = "0";
             // 

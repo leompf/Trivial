@@ -87,6 +87,7 @@
             this.btn_sair.TabIndex = 3;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             this.btn_sair.MouseEnter += new System.EventHandler(this.btn_MouseEnter);
             this.btn_sair.MouseLeave += new System.EventHandler(this.btn_MouseLeave);
             // 

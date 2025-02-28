@@ -103,5 +103,10 @@ namespace Trivial
             Scoreboard scoreboard = new Scoreboard();
             scoreboard.Show();
         }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
