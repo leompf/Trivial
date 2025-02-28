@@ -13,10 +13,13 @@ namespace Trivial
 {
     public partial class Scoreboard: Form
     {
+        public static Scoreboard instancia;
+
         public Scoreboard()
         {
             InitializeComponent();
             this.MaximumSize = new Size(816, 489);
+            instancia = this;
         }
 
         private void Scoreboard_Load(object sender, EventArgs e)
@@ -36,8 +39,7 @@ namespace Trivial
 
         private void Scoreboard_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            Trivial.Menu.instancia.Show();
         }
     }
 }

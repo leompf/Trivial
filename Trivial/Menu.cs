@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
+using System.IO;
 
 namespace Trivial
 {
@@ -14,6 +16,8 @@ namespace Trivial
     {
         // Lógica
         Opcoes opcoes = new Opcoes();
+        public static SoundPlayer musica = new SoundPlayer();
+        public static Menu instancia;
 
         public void Resolucao()
         {
@@ -25,6 +29,7 @@ namespace Trivial
         {
             InitializeComponent();
             Resolucao();
+            instancia = this;
 
             AnimacaoTitulo();
             CorTitulo();
@@ -107,6 +112,12 @@ namespace Trivial
         private void btn_sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            musica.SoundLocation = Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"What If So Then - Karneef.wav");
+            musica.PlayLooping();
         }
     }
 }

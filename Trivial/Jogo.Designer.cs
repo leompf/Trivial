@@ -192,6 +192,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Jogo";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Jogo_FormClosed);
             this.Load += new System.EventHandler(this.Jogo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

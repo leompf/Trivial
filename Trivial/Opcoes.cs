@@ -69,7 +69,7 @@ namespace Trivial
             }
         }
 
-        private void btn_iniciar_Click(object sender, EventArgs e)
+        public void btn_iniciar_Click(object sender, EventArgs e)
         {
             if (cbb_categorias.Text == "" || (!rbtn_facil.Checked) && (!rbtn_medio.Checked) && (!rbtn_dificil.Checked))
             {
@@ -84,6 +84,7 @@ namespace Trivial
                 categoria = cbb_categorias.Text;
                 Jogo jogo = new Jogo(nickname, dificuldade, categoria);
 
+                Trivial.Menu.musica.Stop();
                 this.Hide();
                 jogo.Show();
             }            

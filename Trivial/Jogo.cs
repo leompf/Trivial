@@ -58,7 +58,6 @@ namespace Trivial
             else
             {
                 lbl_timer.Visible = false;
-                //timer1.Start();
                 ExibirPerguntaAtual();
             }
         }
@@ -216,6 +215,9 @@ namespace Trivial
             btn.ForeColor = Color.White;
         }
 
- 
+        private void Jogo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
